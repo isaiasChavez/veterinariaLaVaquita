@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.93d307c6.chunk.css",
+    "main.js": "/static/js/main.be1ddf81.chunk.js",
+    "main.js.map": "/static/js/main.be1ddf81.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3c7fdb96.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3c7fdb96.js.map",
+    "static/js/2.221c12c0.chunk.js": "/static/js/2.221c12c0.chunk.js",
+    "static/js/2.221c12c0.chunk.js.map": "/static/js/2.221c12c0.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a6fae65102efde88f7febf0d127f5c06.js": "/precache-manifest.a6fae65102efde88f7febf0d127f5c06.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.93d307c6.chunk.css.map": "/static/css/main.93d307c6.chunk.css.map",
+    "static/js/2.221c12c0.chunk.js.LICENSE.txt": "/static/js/2.221c12c0.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/movil.8dbeac26.jpg",
+    "static/media/logo.png": "/static/media/logo.d8860a2a.png",
+    "static/media/movil4.jpg": "/static/media/movil4.74342da0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3c7fdb96.js",
+    "static/js/2.221c12c0.chunk.js",
+    "static/css/main.93d307c6.chunk.css",
+    "static/js/main.be1ddf81.chunk.js"
+  ]
+}

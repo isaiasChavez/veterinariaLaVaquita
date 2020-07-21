@@ -1,27 +1,29 @@
 html {
   min-height: 100%;
 }
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+  font-family: Roboto;
   min-height: 100%;
-  padding-bottom: 5rem;
+  height: 100%;
+  color: white;
 }
+
 h1, h2  {
   color: white;
-  padding: 3rem 0;
+  
   text-align: center;
 
   text-transform: uppercase;
 
-  font-family: 'Staatliches', cursive;
+  font-family: Roboto, cursive;
   letter-spacing: 1px;
 }
 .lista-citas .media {
   border-bottom: 1px solid #e1e1e1;
-  padding-bottom: 3rem;
+
 }
 
 .lista-citas .media:last-of-type{
@@ -51,11 +53,25 @@ input[type="time"] {
     box-shadow: none;
     box-sizing: border-box;
 }
-
+.listado-citas{
+  width: 100%;
+  margin: 0 15% ;
+  margin-bottom: 5%;
+}
+.citas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2em;
+}
 .cita {
-  padding: 2rem;
-  background: white;
-  border-bottom: 1px solid #e1e1e1;
+  padding: 1.4rem;
+  margin-top: 2em;
+  width: 30%;
+  box-sizing: border-box;
+  min-height: 40px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
   color: black;
 }
 
@@ -67,27 +83,141 @@ input[type="time"] {
   font-weight: normal;
 
 }
-.cita:first-of-type {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-.cita:last-of-type {
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-.button.eliminar,
-.button.eliminar:hover {
-  background-color: #c10059;
-  color: white;
-  margin-top: 2rem;
-}
+
 
 .alerta-error {
-  background-color: white;
-  color: red;
-  padding: 1rem;
-  font-size: 2rem;
+  color: white;
+  padding: 0.4rem;
+  font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
-  font-family:  'Staatliches', cursive;
+  font-family:  Roboto, cursive;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(63, 68, 65, 0.5);
 } 
+
+
+.principal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vh;
+  background-image: url('./images/landscape.jpg');
+  background-size: cover;
+  
+
+}
+
+.contenido{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.botones-principales{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.formulario{
+  width: 40%;
+}
+.button{
+  padding: 1em 0.5em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 150px;
+}
+.button-clasic{
+  background:none;
+  border: 1px white solid;
+  color: white;
+}
+.button-danger{
+  background:none;
+  border: 1px white solid;
+  color: white;
+}
+.button-clasic:hover{
+  background: rgba(255,255,255,0.1);
+}
+.button-danger:hover{
+  background: rgba(144, 13, 13, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .principal{
+    min-width: 100%;
+    width:100%;
+    background-image: url(./images/movil.jpg);
+    background-size: cover;
+
+
+  }
+
+  .contenido{
+    height: 50vh;
+  }
+
+  .button{
+    height: 100%;
+  }
+  .listado-citas .button{
+    height: 20%;
+  }
+  .listado-citas .cita{
+    height: 20%;
+    width: 49%;
+  }
+  .botones-principales{
+    height: 50%;
+  }
+}
+
+@media (max-width: 750px) {
+  .principal{
+    min-width: 100%;
+    width:100%;
+
+  }
+  .contenido{
+    height: 50vh;
+  }
+
+  .button{
+    height: 40%;
+    margin: 1em 0;
+  }
+  .botones-principales{
+    flex-direction: column;
+    height: 50%;
+  }
+  .listado-citas{
+    width: 100%;
+    margin: 0 5% ;
+    flex-direction: row;
+    margin-bottom: 5%;
+  }
+  .citas{
+    flex-direction: column;
+    width: 100%;
+  }
+  .listado-citas .cita {
+    padding: 1.4rem;
+    font-size: 1.1em;
+    margin-top: 2em;
+    width: 100%;
+  }
+  .listado-citas .button{
+    height: 20%;
+  }
+  .listado-recuperados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ 
+}
